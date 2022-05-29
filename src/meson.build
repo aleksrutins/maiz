@@ -1,0 +1,1 @@
+maiz_srcs = files('server.cpp', 'controller.cpp', 'router.cpp')#, 'model.cpp', 'view.cpp')
