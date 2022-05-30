@@ -10,11 +10,9 @@ lib_args = ['-DBUILDING_MAIZ']
 
 incdirs = include_directories('src', 'src/include')
 
-boost = dependency('boost')
-
 shlib = shared_library('maiz', 
   maiz_srcs,
-  dependencies : [boost],
+  dependencies : [dependency('cpp-httplib')],
   install : true,
   cpp_args : lib_args,
   gnu_symbol_visibility : 'hidden',
